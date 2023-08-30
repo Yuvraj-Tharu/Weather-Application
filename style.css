@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    color: rgb(12, 12, 12);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 802px;
+    width: auto;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, rgba(218, 218, 218, 0.3), rgba(218, 218, 218, 1)), url(https://www.toptal.com/designers/subtlepatterns/patterns/what-the-hex.png);
+}
+
+.card {
+    background: rgb(218, 218, 218);
+    box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.15), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    color: #3d3d3d;
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 430px;
+    margin: 1.5em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: rgb(218, 218, 218);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.02), 9px 9px 15px 0 rgba(0, 0, 0, 0.05), -5px -5px 10px 0 rgba(255, 255, 255, 0.2);
+    color: #3d3d3d;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.6em 1.5em;
+    border-radius: 24px;
+    background: rgb(218, 218, 218);
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.02), 9px 9px 15px 0 rgba(0, 0, 0, 0.05), -5px -5px 10px 0 rgba(255, 255, 255, 0.2);
+    color: #3d3d3d;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+    margin-right: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar:hover {
+    background: #e6e6e6;
+}
+
+input.search-bar:focus {
+    background: #e6e6e6;
+}
+
+button:hover {
+    background: #e6e6e6;
+}
+
+.date_time {
+    margin: 5px;
+    line-height: 2px;
+}
+
+.temp_circle {
+    background: linear-gradient(135deg, rgba(150, 150, 150, 0.22), rgba(255, 255, 255, 0.25));
+    box-shadow: 5px 5px 15px 0 rgba(150, 150, 150, 0.2), 5px 5px 15px 0 rgba(255, 255, 255, 0.2);
+    max-width: 230px;
+    height: 230px;
+    margin: auto;
+    border-radius: 100%;
+}
+
+h1.temp {
+    font-weight: 300;
+    font-size: 3.2em;
+    margin-bottom: 0.4em;
+    text-align: center;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+h2.city {
+    line-height: 0%;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr.horizantal_line {
+    margin: 45px 0px 25px 0px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.content_info {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    line-height: 1px;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.title {
+    line-height: 0%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.weather.loading {
+    visibility: hidden;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: #3d3d3d;
+    position: absolute;
+}
